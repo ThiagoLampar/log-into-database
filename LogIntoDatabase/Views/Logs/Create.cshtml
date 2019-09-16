@@ -1,0 +1,51 @@
+﻿@model LogIntoDatabase.Models.Log
+
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+
+<h4>Log</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Before" class="control-label"></label>
+                <input asp-for="Before" class="form-control" />
+                <span asp-validation-for="Before" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="After" class="control-label"></label>
+                <input asp-for="After" class="form-control" />
+                <span asp-validation-for="After" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Url" class="control-label"></label>
+                <input asp-for="Url" class="form-control" />
+                <span asp-validation-for="Url" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Type" class="control-label"></label>
+                <input asp-for="Type" class="form-control" />
+                <span asp-validation-for="Type" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DateUpdate" class="control-label"></label>
+                <input asp-for="DateUpdate" class="form-control" />
+                <span asp-validation-for="DateUpdate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
