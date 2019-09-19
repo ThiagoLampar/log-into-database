@@ -35,3 +35,7 @@ To learn more about project migration and setup, visit the official Microsoft do
 
 In the project there is a directory called *Sql*, it finds a simple file for creating tables for logging.
 You can make the changes according to your need, only an adjustment to the logging service is required.
+
+## About
+
+The project was developed by Thiago Araújo and you can make any and all changes that are valuable to your business.
